@@ -1,0 +1,127 @@
+animVersion 1.1;
+mayaVersion 2023;
+timeUnit film;
+linearUnit cm;
+angularUnit deg;
+startTime 1;
+endTime 3;
+anim scale.scaleX scaleX skeleton 0 3 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 1 auto auto 1 0 0;
+    3 1 auto auto 1 0 0;
+  }
+}
+anim scale.scaleY scaleY skeleton 0 3 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 1 auto auto 1 0 0;
+    3 1 auto auto 1 0 0;
+  }
+}
+anim scale.scaleZ scaleZ skeleton 0 3 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 1 auto auto 1 0 0;
+    3 1 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX skeleton 0 3 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 2.8402378 auto auto 1 0 0;
+    3 2.8402378 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY skeleton 0 3 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.047600942 auto auto 1 0 0;
+    3 0.047600942 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ skeleton 0 3 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.04421437 auto auto 1 0 0;
+    3 0.04421437 auto auto 1 0 0;
+  }
+}
+anim visibility visibility skeleton 0 3 6;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 1 spline step 1 0 0;
+    3 1 spline step 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX skeleton 0 3 7;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    3 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY skeleton 0 3 8;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    3 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ skeleton 0 3 9;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    3 0 auto auto 1 0 0;
+  }
+}
