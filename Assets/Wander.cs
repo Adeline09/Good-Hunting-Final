@@ -1,10 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
-public class wandering_script : MonoBehaviour
+/// <summary>
+/// Creates wandering behaviour for a CharacterController.
+/// </summary>
+[RequireComponent(typeof(CharacterController))]
+public class Wander : MonoBehaviour
 {
-	public float speed = 100;
+	public float speed = 1;
 	public float directionChangeInterval = 1;
 	public float maxHeadingChange = 30;
 
@@ -25,11 +28,9 @@ public class wandering_script : MonoBehaviour
 
 	void Update ()
 	{
-
 		transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, targetRotation, Time.deltaTime * directionChangeInterval);
 		var forward = transform.TransformDirection(Vector3.forward);
 		controller.SimpleMove(forward * speed);
-		
 	}
 
 	/// <summary>
