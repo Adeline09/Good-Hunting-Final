@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -1294708500325728631}
   - component: {fileID: 2846737591947556209}
   - component: {fileID: 888718954819898082}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: deer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
