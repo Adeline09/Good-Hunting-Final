@@ -10,6 +10,9 @@ public class Gun : MonoBehaviour
     [SerializeField] LayerMask targetLayer;
     [SerializeField] AudioSource gunAudioSource;
     [SerializeField] AudioClip gunClip;
+    public GameObject muzzle;
+    public float offset = -0.5f;
+    public float VerticleOffset = 0.1f;
 
     private void Awake()
     {
@@ -31,6 +34,7 @@ public class Gun : MonoBehaviour
         arg0.interactor.GetComponent<XRBaseController>().SendHapticImpulse(1f, .1f);
         gunAudioSource.PlayOneShot(gunClip);
         FireRaycastIntoScene();
+        Instantiate(muzzle, transform.position + transform.forward*offset + transform.up*VerticleOffset, muzzle.transform.rotation);
     }
 
     private void FireRaycastIntoScene()
