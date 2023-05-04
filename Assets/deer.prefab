@@ -68,6 +68,8 @@ MonoBehaviour:
   speed: 5
   directionChangeInterval: 1
   maxHeadingChange: 30
+  footprint: {fileID: 8168469941923274445, guid: 2897f0465f41a2241aefd949eaceb040,
+    type: 3}
 --- !u!95 &888718954819898082
 Animator:
   serializedVersion: 5

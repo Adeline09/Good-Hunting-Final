@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1299945116748670773}
   - component: {fileID: 975913106299869907}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Footprint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 8168469941923274445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4123902748547952113}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 6893260879941380152}
   - component: {fileID: 7820303633433230972}
   - component: {fileID: 1982207517157690652}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
