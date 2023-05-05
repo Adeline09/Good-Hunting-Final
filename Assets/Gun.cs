@@ -15,6 +15,7 @@ public class Gun : MonoBehaviour
     public float offset = -0.5f;
     public float VerticleOffset = 0.1f;
     public GameObject Deer;
+    private Wander Wander;
 
     private void Awake()
     {
@@ -48,8 +49,9 @@ public class Gun : MonoBehaviour
         }
         if (Physics.Raycast(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, deerLayer))
         {
-
             Destroy(Deer,10.0f);
+            Wander = Deer.GetComponent<Wander>();
+            Wander.enabled = false;
         }
     }
 }
