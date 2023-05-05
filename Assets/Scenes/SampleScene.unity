@@ -1995,11 +1995,15 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 1024
+  deerLayer:
+    serializedVersion: 2
+    m_Bits: 4096
   gunAudioSource: {fileID: 0}
   gunClip: {fileID: 0}
   muzzle: {fileID: 153266, guid: 39b2a3d1ecfa5614b97e75a9b5561f21, type: 3}
   offset: -0.5
   VerticleOffset: 0.1
+  Deer: {fileID: 1146929885}
 --- !u!82 &483552847
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5463,6 +5467,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1299945116748670773, guid: 2897f0465f41a2241aefd949eaceb040,
     type: 3}
   m_PrefabInstance: {fileID: 793567086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1146929885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9014868436140618763, guid: 05b7657ff32dd1243a80f25284c89f94,
+    type: 3}
+  m_PrefabInstance: {fileID: 160808661}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1155018005 stripped
 GameObject:

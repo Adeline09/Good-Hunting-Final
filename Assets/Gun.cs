@@ -8,11 +8,13 @@ public class Gun : MonoBehaviour
     [SerializeField] XRGrabInteractable grabInteractable;
     [SerializeField] Transform raycastOrigin;
     [SerializeField] LayerMask targetLayer;
+    [SerializeField] LayerMask deerLayer;
     [SerializeField] AudioSource gunAudioSource;
     [SerializeField] AudioClip gunClip;
     public GameObject muzzle;
     public float offset = -0.5f;
     public float VerticleOffset = 0.1f;
+    public GameObject Deer;
 
     private void Awake()
     {
@@ -43,6 +45,11 @@ public class Gun : MonoBehaviour
         if (Physics.Raycast(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, targetLayer))
         {
             Debug.Log("Target Hit!");
+        }
+        if (Physics.Raycast(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, deerLayer))
+        {
+
+            Destroy(Deer,10.0f);
         }
     }
 }
