@@ -10,11 +10,15 @@ public class Wander : MonoBehaviour
 	public float speed = 1;
 	public float directionChangeInterval = 1;
 	public float maxHeadingChange = 30;
-
+	public GameObject footprint;
 	CharacterController controller;
 	float heading;
 	Vector3 targetRotation;
 
+	void Start()
+    {
+		InvokeRepeating("SpawnFootprint", 2.0f, 2.0f);
+    }
 	void Awake ()
 	{
 		controller = GetComponent<CharacterController>();
@@ -37,6 +41,14 @@ public class Wander : MonoBehaviour
 	/// Repeatedly calculates a new direction to move towards.
 	/// Use this instead of MonoBehaviour.InvokeRepeating so that the interval can be changed at runtime.
 	/// </summary>
+    
+	void SpawnFootprint()
+    {
+		Vector3 deerPos = transform.position;
+
+		Quaternion footprintRot = Quaternion.Euler(0.0f, 270.0f, 0.0f);
+		GameObject newFootprint = Instantiate(footprint, deerPos + new Vector3(0.0f, -1.0f, 0.0f), footprintRot);
+    }
 	IEnumerator NewHeading ()
 	{
 		while (true) {
